@@ -1,0 +1,31 @@
+# Ignore everything by default
+*
+
+# But keep the .gitignore itself
+!.gitignore
+
+# Keep only these files in the repo root
+!/app.py
+!/main.py
+!/vendas_tech_limpo.csv
+!/LICENSE
+!/requirements.txt
+
+# Ensure Git can track the root directory files (negation above is enough for root files)
+# Ignore common local/dev artifacts (kept for clarity; already covered by the leading "*")
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.DS_Store
+*.log
+*.sqlite3
